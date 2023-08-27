@@ -1,0 +1,13 @@
+# Brief description of derived/ folder
+
+In the raw/ folder, we have 5 separate CSV files. All files are cleaned using the codes in [data_cleaning.R](/scr/data_cleaning/data_cleaning.R). The text below provides a brief summary of each of them.
+
+- [num_employees_by_sector_clean.csv](/data/derived/num_employees_by_sector_clean.csv): This CSV file contains the number of mine operator and independent contractor employees by sector and year from 1983 to 2021. After cleaning the data, we have 7 rows with 40 columns. We combine the coal operator and coal contractor and delete the total row from [num_employees_by_sector.csv](/data/raw/num_employees_by_sector.csv).
+
+- [num_employees_by_state.csv](/data/derived/num_employees_by_state.csv): This CSV file contains the number of mine operator and independent contractor employees by state and year from 1983 to 2021. We combine the data from the [num_employees_by_region/](/data/raw/num_employees_by_region/) folder of different years and add the data of each state together. Note that as we focus on the state in the U.S., we ignore the data from the Virgin Islands of the U.S. and Puerto Rico.
+
+- [num_of_active_mines_by_sector_clean.csv](/data/derived/num_of_active_mines_by_sector_clean.csv): This CSV file contains the number of active mines by sectors and years from 1983 to 2021. After cleaning the data, we have 6 rows with 40 columns. We delete the total row from [num_of_active_mines_by_sector.csv](/data/raw/num_of_active_mines_by_sector.csv).
+
+- [num_of_employee_hour_by_sector_clean.csv](/data/derived//num_employees_by_state.csv): This CSV file contains the number of employee hours reported by mine operators and independent contractors by sector and year from 1983 to 2021. After cleaning the data, we have 7 rows with 40 columns. We combine the coal operator and coal contractor and delete the total row from [num_of_employee_hour_by_sector.csv](/data/raw/num_of_employee_hour_by_sector.csv).
+
+- [num_operators_by_state.csv](/data/derived/num_operators_by_state.csv): This CSV file contains the number of active mining operations by state and year from 1983 to 2021. We combine the data from the [num_operators_by_region/](/data/raw/num_operators_by_region/) folder of different years and add the data of each state together. Note that as we focus on the state in the U.S., we ignore the data from the Virgin Islands of the U.S. and Puerto Rico.
